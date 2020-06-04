@@ -8,4 +8,5 @@
 """
 	
 """
-prit("helloword")
+print("helloword")
+print("bug已修复！")
