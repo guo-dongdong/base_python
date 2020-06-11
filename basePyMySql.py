@@ -17,7 +17,7 @@ db = pymysql.connect(
     port=3306,
     user='root',
     passwd='123456',
-    db='runoob_db'
+    db='car'
 )
 
 # 创建游标
@@ -32,7 +32,7 @@ cur = db.cursor()
 # print("Database version : %s " % data)
 
 # SQL 插入语句
-sql = """INSERT INTO sites (name, url) VALUES ("360", "www.360.com")"""
+sql = """INSERT INTO testcar (product, business, version, remarks) VALUES ("360", "www.360.com")"""
 try:
     # 执行sql语句
     cur.execute(sql)
